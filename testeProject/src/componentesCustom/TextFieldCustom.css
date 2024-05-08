@@ -1,0 +1,76 @@
+/** Fields de texto:
+ * .component-box: um VBox que envolve um Label e um HBox
+ * .field-box: o HBox que envolve um TextField e um Button
+ * .title-label: Label com o nome do campo
+ * .input-text: TextField
+ * .btn: botões do field
+ * .icon: ícones dos botões
+ * #iconKeyboard: ícone do botão de chamada do teclado virtual
+ * #iconPinpad: ícone do botão de chamada do pinpad
+ * #iconClearField: ícone do botão de limpesa do valor
+ */
+
+.component-box {
+	-fx-spacing: 10.0px;
+	-fx-min-height: 55.0px;
+	-fx-min-width: 60.0px;
+}
+
+.title-label {
+	-fx-text-fill: #555555;
+	-fx-font-weight: normal;
+	-fx-alignment: center-left;
+}
+
+.field-box {
+	-fx-background-insets: 0.0, 1.0;
+	-fx-background-radius: 20.0, 2.0;
+	-fx-border-radius: 20.0, 2.0;
+	-fx-border-color: #888888;
+	-fx-padding: 0.0; 
+}
+
+.field-box:focused {
+	-fx-border-color: #87CEFA;
+}
+
+.input-text, .field-button {
+	-fx-background-color: transparent;
+	-fx-border-style: none;
+    -fx-border-width: 0.0;
+    -fx-border-color: #87CEFA;
+    -fx-border-insets: 0.0;
+}
+
+.field-button {
+	-fx-max-width: 40.0px;
+	-fx-min-width: 40.0px;
+	-fx-padding: 0.0;
+}
+
+.field-button:hover {
+	-fx-cursor: hand;
+}
+
+.field-button:pressed, .icon:pressed {
+	-fx-opacity: 0.6px;
+}
+
+.icon { 
+	-fx-icon-size: 20.0px;
+	-fx-icon-color: #87CEFA;
+}
+
+
+#iconClearField {
+	-fx-font-weight: normal;
+}
+
+.filled-background .field-box {
+	-fx-background-color: -app-color-1e;
+}
+
+.icon-btn-extra {
+	-fx-icon-size: 16.0px;
+	-fx-icon-color: -app-color;
+}

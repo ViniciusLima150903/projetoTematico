@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.kordamp.ikonli.javafx.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?> 
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<fx:root styleClass="component-box"
+	stylesheets="@..\componentesCustom\TextFieldCustom.css"
+	type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/19"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label fx:id="lblTitle" styleClass="title-label" />
+		<HBox fx:id="fieldBox" styleClass="field-box" VBox.vgrow="ALWAYS">
+			<children>
+				<Button fx:id="btnClear" maxHeight="Infinity"
+					onAction="#clearField" styleClass="field-button"
+					focusTraversable="false">
+					<graphic>
+						<FontIcon fx:id="iconClearField" styleClass="icon" />
+					</graphic>
+				</Button>
+				<TextField fx:id="txtField" maxHeight="Infinity"
+					styleClass="input-text" HBox.hgrow="ALWAYS" />
+				<PasswordField fx:id="passwordField"
+					maxHeight="Infinity" styleClass="input-text" HBox.hgrow="ALWAYS"
+					visible="false" managed="false" />
+				<Button fx:id="btnAction" maxHeight="Infinity"
+					styleClass="field-button" focusTraversable="false">
+					<graphic>
+						<FontIcon fx:id="icon" styleClass="icon" />
+					</graphic>
+				</Button>
+			</children>
+		</HBox>
+	</children>
+</fx:root>
+
+
+
