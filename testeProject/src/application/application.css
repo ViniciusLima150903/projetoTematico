@@ -1,0 +1,524 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/* Botões */
+.btn {
+	-fx-background-color: #ffffff; 
+	-fx-text-fill: #87CEFA;
+	-fx-border-color: #87CEFA;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px;
+	-fx-font-weight: bold;
+	-fx-min-height: 36.0px;
+	-fx-pref-height: 42.0px;
+	-fx-background-insets:1.0;
+	-fx-min-width:140.0px;
+	-fx-max-width:140.0px;
+	-fx-font-size: 12.0px;
+}
+
+.btn:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #EEEEEE;
+}
+
+.btn:focused {
+    -fx-opacity: 0.7px;
+}
+
+.btn:pressed, .button:default:hover:pressed {
+  -fx-background-color: #87CEFA;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: #87CEFA;
+  -fx-cursor: hand;
+}
+
+.btn_primary {
+	-fx-pref-height: 40.0px;
+	-fx-min-width:160.0px;
+	-fx-max-width:160.0px;
+	-fx-font-size: 12.0px;
+	-fx-background-color: #87CEFA; 
+	-fx-text-fill: #ffffff;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px;
+	-fx-min-height: 36.0px;
+	-fx-font-weight: bold;
+	-fx-wrap-text: false;
+}
+
+.btn_primary:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #87CEFA-c8;
+    -fx-opacity: 0.7px;
+}
+
+.btn_primary:focused {
+    -fx-opacity: 0.7px;
+}
+
+.btn_primary:pressed, .button:default:hover:pressed {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #87CEFA;
+  -fx-border-color: #87CEFA;
+  -fx-cursor: hand;
+}
+.btn_close {
+	-fx-padding: 0.0;
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-pref-width: 40.0px;
+	-fx-pref-height: 40.0px;
+}
+
+.btn_close:hover {
+	-fx-background-color: rgba(136.0, 136.0, 136.0, 0.1);
+	-fx-cursor: hand;
+}
+
+.btn_close:pressed {
+	-fx-background-color: rgba(136.0, 136.0, 136.0, 0.5);
+}
+
+.btn_close:focused {
+    -fx-opacity: 0.7px;
+}
+
+
+.label-titulo{
+ 	-fx-font-size: 18.0px;
+ 	-fx-alignment: center-left;
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: #888888;
+}
+
+
+.hbox-header{
+	-fx-alignment: center-left;
+	-fx-pref-height: 30.0;
+	-fx-min-height: 30.0;
+	-fx-max-height: 30.0;
+}
+
+.box-rodape{
+	-fx-pref-height: 50.0;
+	-fx-min-height: 50.0;
+	-fx-max-height: 50.0;
+	-fx-alignment: center;
+	-fx-spacing: 10.0px;
+}
+
+
+.toggle-btn {
+	-fx-border-color: #EEEEEE;
+	-fx-border-width: 2.0px;
+	-fx-background-color: transparent;
+	-fx-border-radius: 10.0px;
+	-fx-background-radius: 10.0px;
+	-fx-text-fill: -app-color;
+}
+
+.toggle-btn:hover {
+	-fx-cursor: hand;
+}
+
+.toggle-btn:selected {
+	-fx-border-color: -app-color;
+}
+
+
+.tabelas-style{
+   -fx-background-insets: 0.0; 
+   -fx-background-radius: 10.0px; 
+   -fx-border-width: 1.0;
+   -fx-padding: 2.0px;
+   -fx-border-radius: 10.0px;
+   -fx-border-color: #EEEEEE;
+   -fx-pref-height:178.0;
+   -fx-min-height:178.0;
+   -fx-max-height:178.0;
+   -fx-pref-width:778.0;
+   -fx-min-width: 778.0;
+   -fx-max-width: 778.0;
+}
+
+.tabelas-style .table{
+	-fx-background-radius: 10.0px;
+	-fx-background-color: #909090;
+	-fx-border-radius: 10.0px;
+}
+.tabelas-style .thumb {
+   -fx-background-color: #909090;
+   -fx-background-radius: 10.0px;
+   -fx-border-radius: 10.0px; 
+}
+
+.tabelas-style .table-cell{
+   -fx-wrap-text: false;
+   -fx-font-weight: normal;
+   -fx-text-fill: #909090;/*Cor da fonte das celulas*/
+}
+
+.tabelas-style .table-cell:even{
+   -fx-wrap-text: false;
+   -fx-font-weight: normal;
+   -fx-background-color: #87CEFA-0.0a;
+}
+
+
+.tabelas-style .table-row-cell{
+   -fx-wrap-text: false;
+   -fx-background-color: #87CEFA-0.0a;
+   -fx-min-height: 20.0px;
+   -fx-max-height: 20.0px;
+}
+
+.tabelas-style .table-row-cell:hover{
+   -fx-cursor: hand;
+   -fx-opacity: 0.6px;
+}
+
+.tabelas-style .table-row-cell:pressed{
+   -fx-cursor: hand;
+   -fx-opacity: 0.8px;
+}
+
+.tabelas-style .column-header-background .label{
+   -fx-font-weight: bold;
+   -fx-background-color: transparent;
+}
+
+.collunm-pnl{
+-fx-wrap-text: false;
+}
+
+
+/* COMBO-BOX */
+.cmb-box {
+	-fx-background-color: transparent;
+	-fx-border-color: #CCCCCC;
+	-fx-font-family: "Mulish Regular";
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-font-size: 16px;
+	-fx-pref-height: 40px;
+}
+
+.cmb-box:hover {
+	-fx-border-color: #888888;
+}
+
+.cmb-box .combo-box-popup .list-cell {
+	-fx-cell-size: 40px;
+	-fx-background-color: transparent;
+	-fx-text-fill: black;
+}
+
+.cmb-box .combo-box-popup .list-cell:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #EEEEEE;
+}
+
+.cmb-box .combo-box-popup .list-cell:selected {
+	-fx-cursor: hand;
+	-fx-background-color: #CCCCCC;
+}
+
+.cmb-box .combo-box-popup .track, 
+.cmb-box .combo-box-popup .increment-button, 
+.cmb-box .combo-box-popup .decrement-button, 
+.cmb-box .combo-box-popup .scroll-bar,
+.cmb-box .combo-box-popup .column-header,
+.cmb-box .combo-box-popup .filler,
+.cmb-box .combo-box-popup .table-cell,
+.cmb-box .combo-box-popup .corner {
+    -fx-background-color: transparent;  
+    -fx-border-style: none;
+    -fx-border-width: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.cmb-box .combo-box-popup .increment-button, .cmb-box .combo-box-popup .decrement-button { 
+    -fx-padding: 5.0px;
+}
+
+.cmb-box .combo-box-popup .thumb {
+    -fx-background-color: #EEEEEE;
+    -fx-background-radius: 10.0px;
+    -fx-border-radius: 10.0px;  
+}
+
+.cmb-box .combo-box-popup .thumb:hover, .cmb-box .combo-box-popup .thumb:pressed {
+    -fx-background-color: #DDDDDD;
+}
+
+
+#pnlStackPaneHammer #cmbDatabases{
+	-fx-background-color: -fx-control-inner-background;
+	-fx-background-insets: 0.0;
+	-fx-padding: 3.0 3.0 3.0 3.0;
+	-fx-background-color: #f2f2f2;
+	-fx-border-color:#f2f2f2;
+    -fx-pref-height:40.0;
+	-fx-min-height:40.0;
+	-fx-max-height:40.0;
+	-fx-pref-width:226.0; 
+	-fx-min-width:226.0;
+	-fx-max-width:226.0;
+	-fx-background-radius:20px;
+	-fx-border-radius: 20px;
+}
+
+#pnlStackPaneHammer #cmbDatabases:hover{
+	-fx-cursor: hand;
+	-fx-opacity: 0.6px;
+}
+
+#pnlStackPaneHammer #cmbDatabases .list-cell{
+	-fx-font-size:14px;
+	-fx-text-fill:-app-color;
+}
+
+#pnlStackPaneHammer #cmbDatabases .arrow {
+	-fx-background-color:-app-color;
+}
+
+/* Menu principal */
+
+#pnlStackPaneMenuApp{
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.5);
+}
+
+#pnlStackPaneMenuApp #painelMenuApp{
+	-fx-pref-height:380.0;
+	-fx-min-height:380.0;
+	-fx-max-height:380.0;
+	-fx-pref-width:400.0;
+	-fx-min-width: 400.0;
+	-fx-max-width: 400.0;
+	-fx-background-radius: 10.0px; 
+	-fx-border-radius: 10.0px;
+	-fx-background-color: white;
+}
+
+
+#pnlStackPaneMenuApp #boxRodape{
+	-fx-pref-width:400.0;
+	-fx-min-width: 400.0;
+	-fx-max-width: 400.0;
+	-fx-pref-height: 50.0;
+	-fx-min-height: 50.0;
+	-fx-max-height: 50.0;
+	-fx-alignment: center-left;
+	-fx-spacing: 10.0px;
+}
+
+#pnlStackPaneMenuApp #hboxHeaderMenuApp{
+    -fx-pref-height: 44.0;
+	-fx-min-height: 44.0;
+	-fx-max-height: 44.0;
+	-fx-alignment: center-left;
+}
+
+#pnlStackPaneMenuApp #tituloMenuApp{
+ 	-fx-pref-width: 200.0px;
+ 	-fx-font-size: 18.0px;
+ 	-fx-alignment: center-left;
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: #888888;
+}
+
+
+#pnlStackPaneMenuApp #boxDivisorBotoes{
+	-fx-pref-height: 200.0;
+	-fx-min-height: 200.0;
+	-fx-max-height: 200.0;
+	-fx-background-color: white;
+	-fx-spacing:10.0px;
+	-fx-alignment: center-left;
+}
+
+#pnlStackPaneMenuApp .box-botoes{
+	-fx-alignment: center-left;
+	-fx-spacing: 15.0px;
+}
+
+
+#pnlStackPaneMenuApp #botaoCancelar{
+	-fx-pref-height: 42.0px;
+	-fx-background-insets:1.0;
+	-fx-min-width:140.0px;
+	-fx-max-width:140.0px;
+	-fx-border-radius:10.0px;
+	-fx-background-radius:10.0px;
+	-fx-text-fill: black; 
+	-fx-font-size: 12.0px;
+}
+
+#pnlStackPaneMenuApp #botaoCancelar:pressed{
+	-fx-text-fill:#cccccc;
+	-fx-background-color: black;
+}
+
+/* popups da aplicação */
+#pnlStackPaneTelaPopups{
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.5);
+}
+
+#pnlStackPaneTelaPopups #painelTelaPopups{
+	-fx-pref-height:240.0;
+	-fx-min-height:240.0;
+	-fx-max-height:240.0;
+	-fx-pref-width:250.0;
+	-fx-min-width: 250.0;
+	-fx-max-width: 250.0;
+	-fx-background-radius: 10.0px; 
+	-fx-border-radius: 10.0px;
+	-fx-alignment:top-center;
+	-fx-spacing: 10.0px;
+	-fx-background-color: white;
+}
+
+
+#pnlStackPaneTelaPopups #boxRodape{
+	-fx-pref-width:350.0;
+	-fx-min-width: 350.0;
+	-fx-max-width: 350.0;
+	-fx-pref-height: 50.0;
+	-fx-min-height: 50.0;
+	-fx-max-height: 50.0;
+	-fx-alignment: center;
+	-fx-spacing: 10.0px;
+}
+
+#pnlStackPaneTelaPopups #hboxHeaderTelaPopups{
+	-fx-alignment: center-left;
+	-fx-pref-height: 30.0;
+	-fx-min-height: 30.0;
+	-fx-max-height: 30.0;
+}
+
+#pnlStackPaneTelaPopups #tituloTelaPopups{
+ 	-fx-pref-width: 200.0px;
+ 	-fx-font-size: 18.0px;
+ 	-fx-alignment: center-left;
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: #888888;
+}
+
+
+#pnlStackPaneTelaPopups #labelInfo{
+ 	-fx-font-size: 14.0px;
+ 	-fx-alignment: center;
+ 	-fx-text-fill: #888888;
+}
+
+
+#pnlStackPaneTelaPopups #botaoCancelar{
+	-fx-pref-height: 42.0px;
+	-fx-background-insets:1.0;
+	-fx-min-width:140.0px;
+	-fx-max-width:140.0px;
+	-fx-border-radius:10.0px;
+	-fx-background-radius:10.0px;
+	-fx-text-fill: black; 
+	-fx-font-size: 12.0px;
+}
+
+#pnlStackPaneTelaPopups #botaoCancelar:pressed{
+	-fx-text-fill:#cccccc;
+	-fx-background-color: black;
+}
+
+
+
+/* Tela de Login */
+
+#pnlStackPaneTelaLogin{
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.5);
+}
+#pnlStackPaneTelaLogin #painelTelaLogin{
+	-fx-pref-height:330.0;
+	-fx-min-height:330.0;
+	-fx-max-height:330.0;
+	-fx-pref-width:510.0;
+	-fx-min-width: 510.0;
+	-fx-max-width: 510.0;
+	-fx-background-radius: 10.0px; 
+	-fx-border-radius: 10.0px;
+	-fx-alignment:top-left;
+	-fx-spacing: 10.0px;
+	-fx-background-color: white;
+}
+
+
+#pnlStackPaneTelaLogin #boxRodape{
+	-fx-pref-width:350.0;
+	-fx-min-width: 350.0;
+	-fx-max-width: 350.0;
+	-fx-pref-height: 50.0;
+	-fx-min-height: 50.0;
+	-fx-max-height: 50.0;
+	-fx-alignment: center;
+	-fx-spacing: 10.0px;
+}
+
+#pnlStackPaneTelaLogin #hboxHeaderTelaLogin{
+	-fx-alignment: center-left;
+	-fx-pref-height: 30.0;
+	-fx-min-height: 30.0;
+	-fx-max-height: 30.0;
+}
+
+#pnlStackPaneTelaLogin #tituloTelaLogin{
+ 	-fx-pref-width: 200.0px;
+ 	-fx-font-size: 18.0px;
+ 	-fx-alignment: center-left;
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: #888888;
+}
+
+
+#pnlStackPaneTelaLogin #labelInfo{
+ 	-fx-font-size: 14.0px;
+ 	-fx-alignment: center;
+ 	-fx-text-fill: #888888;
+}
+
+
+#pnlStackPaneTelaLogin #botaoCancelar{
+	-fx-pref-height: 42.0px;
+	-fx-background-insets:1.0;
+	-fx-min-width:140.0px;
+	-fx-max-width:140.0px;
+	-fx-border-radius:10.0px;
+	-fx-background-radius:10.0px;
+	-fx-text-fill: black; 
+	-fx-font-size: 12.0px;
+}
+
+#pnlStackPaneTelaLogin #botaoCancelar:pressed{
+	-fx-text-fill:#cccccc;
+	-fx-background-color: black;
+}
+
+#pnlStackPaneTelaLogin .fields-login{
+	-fx-text-fill:#cccccc;
+	-fx-background-color: white;
+	-fx-border-radius:10.0px;
+	-fx-background-radius:10.0px;
+	-fx-pref-height:65.0;
+	-fx-min-height:65.0;
+	-fx-max-height:65.0;
+	-fx-pref-width:450.0;
+	-fx-min-width: 450.0;
+	-fx-max-width: 450.0;
+}
+
+
